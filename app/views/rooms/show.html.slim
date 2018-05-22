@@ -1,0 +1,18 @@
+.container
+  .row
+    .col.s12.m12.l12
+      h1 ムカツクことを発言しろ
+  .row
+    .col.s12.m12.l12
+      h5 ただし、個人を特定できる情報(名前、電話番号、メルアドなど)
+      h5 は記載しないようにしてください。
+  .row
+    .col.s12.m12.l12
+      #messages
+        = render @messages
+  .row
+    .col.s12.m12.l12
+      form
+      label 発言を入力する:
+      br/
+      input data-behavior="room_speaker" type="text" /
